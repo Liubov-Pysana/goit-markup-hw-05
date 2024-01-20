@@ -15,10 +15,6 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-email {
-  width: 0.75em;
-}
-
-.icon-phone {
-  width: 0.75em;
+.icon-check-icon {
+  width: 1.25em;
 }
