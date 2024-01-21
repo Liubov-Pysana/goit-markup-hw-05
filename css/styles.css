@@ -647,20 +647,6 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-input::placeholder comment {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid #2e2f4266;
-    background-color: transparent;
-    margin-bottom: 8px;
-    color: #2e2f42;
-    display: flex;
-    padding-left: 16px;
-    outline: transparent;
-    font-family: inherit;
-} */
-
 .modal-input:hover {
     border: 1px solid #4d5ae5;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -671,8 +657,12 @@ img {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
+.modal-input:hover {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #4d5ae5;
+}
+
+.modal-input:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #4d5ae5;
 }
@@ -683,7 +673,6 @@ img {
 
 .modal-input::placeholder {
     color: rgba(46, 47, 66, 0.4);
-    /* Small Text */
     font-family: Roboto;
     line-height: 0, 2em;
     letter-spacing: 0.48px;
@@ -754,6 +743,11 @@ img {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-icon:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #4d5ae5;
+}
+
 .modal-field .modal-label {
     width: auto;
 }
@@ -765,7 +759,6 @@ img {
     border: 1px solid #2e2f4266;
     background-color: transparent;
     outline: transparent;
-    /* font-family: inherit; */
     padding: 8px 16px;
     resize: none;
     margin-bottom: 8px;
@@ -843,6 +836,7 @@ img {
 .check-input:checked + .check-text .span-check {
     background-color: #404bbf;
     border: none;
+    fill: #f4f4fd;
 }
 
 .check-input:checked + .check-text .span-check svg {
