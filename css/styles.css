@@ -626,7 +626,6 @@ img {
     font-style: normal;
     font-weight: 400;
     display: block;
-    letter-spacing: 0.02em;
     margin-bottom: 4px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -650,6 +649,7 @@ img {
 .modal-input:hover {
     border: 1px solid #4d5ae5;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #4d5ae5;
 }
 
 .modal-input:focus {
@@ -657,13 +657,7 @@ img {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #4d5ae5;
-}
-
-.modal-input:focus {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-input:focus + svg {
     fill: #4d5ae5;
 }
 
@@ -689,7 +683,6 @@ img {
 }
 
 .modal-field .modal-label {
-    display: flex;
     width: fit-content;
 }
 
