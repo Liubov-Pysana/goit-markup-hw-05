@@ -415,8 +415,15 @@
                 <div class="footer-subscribe-block">
                     <p class="footer-social-media-text">Subscribe</p>
                     <form class="footer-form">
-                        <input type="email" name="footer-email" class="footer-input" placeholder="E-mail" />
-                        <button class="footer-form-btn" type="submit">Subscribe</button>
+                        <label for="email" name="footer-email" class="footer-form-lable">
+                            <input type="email" name="footer-email" class="footer-input" placeholder="E-mail" />
+                        </label>
+                        <button class="footer-form-btn" type="submit">
+                            Subscribe
+                            <svg class="footer-form-btn-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -482,7 +489,6 @@
 
                     <div class="modal-field">
                         <label for="comment" class="modal-label">Comment</label>
-                        <!-- поміняти шрифти -->
                         <textarea
                             name="user-comment"
                             id="user-comment"
