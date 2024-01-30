@@ -1,73 +1,97 @@
 /* ---------------------------------------Media screen 320-------------------------------- */
 
 @media screen and (min-width: 320px) {
-    .container {
+    /* .container {
         max-width: 288px;
-    }
+    } */
 
     /* Hero */
 
-    .hero-title {
+    /* .hero-title {
         font-size: 36px;
         margin-bottom: 76px;
         width: 200px;
-    }
+    } */
 
-    .hero-btn {
+    /* .hero-btn {
         min-width: 169px;
         height: 56px;
+    } */
+
+    /* section 2 What we do */
+
+    /* .what-we-do {
+        padding: 96px 16px;
+    } */
+
+    /* .what-we-do-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        gap: 72px;
     }
+
+    .what-we-do-item {
+        width: 100%;
+    } */
+
+    /* .what-we-do-item-block {
+        display: none;
+    } */
+
+    /* .what-we-do-subtitle {
+        font-size: 36px;
+        text-align: center;
+    } */
 
     /* section 3 Our-team */
 
-    .our-team {
+    /* .our-team {
         padding: 96px 16px;
-    }
+    } */
 
-    .our-team-list {
+    /* .our-team-list {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
         row-gap: 72px;
-    }
+    } */
 
-    .our-team-item {
-        background-color: #ffffff;
+    /* .our-team-item {
         width: 100%;
-        /* gap: 72px; */
-    }
+    } */
 
-    .our-team-item-container {
+    /* .our-team-item-container {
         width: 100%;
         padding: 32px 0;
         justify-content: center;
         align-items: center;
         gap: 32px;
-    }
+    } */
 
     /* Section 4 Our portfolio */
 
-    .our-portfolio {
+    /* .our-portfolio {
         padding: 96px 0 72px 0;
-    }
+    } */
 
-    .our-portfolio-list {
+    /* .our-portfolio-list {
         display: flex;
         width: 288px;
         padding-bottom: 32px;
         flex-direction: column;
         align-items: flex-start;
-    }
-    .our-portfolio-item {
+    } */
+    /* .our-portfolio-item {
         width: 100%;
-    }
+    } */
 
-    .our-portfolio-item-container {
-        /* padding: 32px 0; */
-        /* border: 1px solid #e7e9fc;
-        border-top: none; */
-    }
+    /* .our-portfolio-item-container {
+        padding: 32px 0;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+    } */
 }
 
 /* -------------------------------------Media screen 768-------------------------------------- */
@@ -92,6 +116,26 @@
         height: 56px;
     }
 
+    /* section 2 What we do */
+
+    .what-we-do > .container {
+        max-width: 768px;
+    }
+
+    .what-we-do-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .what-we-do-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* section 3 Our-team */
+
     .our-team {
         padding: 96px 96px;
     }
@@ -111,6 +155,16 @@
         align-items: center;
     }
 
+    .our-team-item-container {
+        padding: 32px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    /* Section 4 Our portfolio */
+
     .our-portfolio {
         padding: 96px 0 96px 0;
     }
@@ -120,19 +174,6 @@
         flex-direction: row;
         width: 100%;
         padding-bottom: 32px;
-    }
-
-    /* .our-team-item-photo {
-        justify-content: center;
-        align-items: center;
-    } ------------delited clas from html file------------*/
-
-    .our-team-item-container {
-        padding: 32px 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 32px;
     }
 
     .our-portfolio-item {
@@ -147,6 +188,10 @@
         max-width: 1158px;
     }
 
+    /* section 2 What we do */
+
+    /* section 3 Our-team */
+
     .our-team {
         padding: 120px 0 120px 0;
     }
@@ -156,6 +201,8 @@
     .our-team-item {
         width: calc((100% - 72px) / 4);
     }
+
+    /* Section 4 Our portfolio */
 
     .our-portfolio {
         padding: 120px 0 120px 0;
